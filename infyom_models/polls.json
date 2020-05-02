@@ -1,0 +1,89 @@
+[
+{
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "title",
+    "dbType": "string",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true,
+    "fillable": true,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "description",
+    "dbType": "string",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true,
+    "fillable": true,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "num_questions",
+    "dbType": "integer",
+    "htmlType": "number",
+    "validations": "required",
+    "searchable": true,
+    "fillable": true,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "status",
+    "dbType": "boolean",
+    "htmlType": "select,Active:1,Disabled:0",
+    "validations": "required",
+    "searchable": true,
+    "fillable": true,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "user_id",
+    "dbType": "integer:unsigned:foreign,users,id",
+    "htmlType": "number",
+    "relation": "mt1,User,user_id,id"
+},
+{
+    "type": "relation",
+    "relation": "1tm,Question"
+},
+{
+    "type": "relation",
+    "relation": "1tm,Response"
+},
+{
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+}
+]

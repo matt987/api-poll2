@@ -1,0 +1,71 @@
+[
+{
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "response",
+    "dbType": "string",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true,
+    "fillable": true,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "latitude",
+    "dbType": "string",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true,
+    "fillable": true,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "longitude",
+    "dbType": "string",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true,
+    "fillable": true,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "poll_id",
+    "dbType": "integer:unsigned:foreign,polls,id",
+    "htmlType": "number",
+    "relation": "mt1,Poll,poll_id,id"
+},
+{
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+}
+]
