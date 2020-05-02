@@ -1,3 +1,5 @@
+## API POLL
+	This repository has all logic for create a poll and your questions, and have a back-end administration to see the answers to
 
 ## Install
 This tutorial works with docker and docker-compose and it suppose that you have installed yet.
@@ -36,10 +38,16 @@ Can install this project using [Laradock](https://laradock.io).
   docker-compose up -d nginx mysql phpmyadmin redis workspace
 ```
 
-- Run migrations
+- Run migrations and seeders
 ```
 	docker-compose exec workspace bash
-	root@containerid:/var/www# php artisan migrate
+	root@containerid:/var/www# php artisan migrate:fresh --seed
 ```
 
 - Visit [localhost](http://localhost) in browser
+- You have a default user, please remove than user for productions purpose
+```
+         email    => admin@polls.com
+         password => admin12345
+```
+
